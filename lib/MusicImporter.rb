@@ -9,7 +9,7 @@ class MusicImporter
     Dir["#{@path}/*.mp3"].map {|filename| filename.sub("#{@path}/", "")}
   end
   
-  def self.import
+  def self.import (files)
     
   end
   
