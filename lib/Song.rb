@@ -50,12 +50,10 @@ class Song
     name = file.split(" - ")[1]
     artist_name = file.split(" - ")[0]
     genre_name = file.split(" - ")[2].chomp(".mp3")
-    artist = Artist.new(artist_name)
-    genre = Genre.new(genre_name)
-    song = self.new(name)
-    #song.artist=(artist)
-    #song.genre=(genre)
-    song
+    artist = Artist.find_or_create_by_name(artist_name)
+    genre = Genre.find_or_create_by_name(genre_name)
+    song = self.new(name, artist, genre)
+    #song
   end
   
 end
