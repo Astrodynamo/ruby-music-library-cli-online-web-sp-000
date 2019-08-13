@@ -20,4 +20,16 @@ class MusicLibraryController
     end
   end
   
+  def list_songs
+    Song.all
+  end
+  
+  def list_artists
+    Artist.all
+  end
+  
+  def list_genres
+    Genre.all
+  end
+  
 end
