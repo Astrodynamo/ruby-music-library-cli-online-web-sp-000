@@ -17,8 +17,9 @@ class MusicLibraryController
     while answer != "exit"
       puts "What would you like to do?"
       answer = gets.strip
-      case
-        
+      case answer
+        when "list songs"
+          
       end
     end
   end
