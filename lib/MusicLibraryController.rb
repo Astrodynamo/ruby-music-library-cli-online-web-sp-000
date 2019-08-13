@@ -14,6 +14,8 @@ class MusicLibraryController
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
     answer = ""
+    case answer
+    
     while answer != "exit"
       puts "What would you like to do?"
       answer = gets.strip
