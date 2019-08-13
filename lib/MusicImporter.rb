@@ -9,8 +9,8 @@ class MusicImporter
     Dir["#{@path}/*.mp3"].map {|filename| filename.sub("#{@path}/", "")}
   end
   
-  def self.import (files)
-    
+  def self.import
+    self.files.each {|file| Song.new_from_filename(file)}
   end
   
   def self.new_from_filename
