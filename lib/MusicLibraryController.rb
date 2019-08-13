@@ -13,6 +13,7 @@ class MusicLibraryController
     puts "To list all of the songs of a particular genre, enter 'list genre'."
     puts "To play a song, enter 'play song'."
     puts "To quit, type 'exit'."
+    answer = ""
     while answer != "exit"
       puts "What would you like to do?"
       answer = gets.strip
