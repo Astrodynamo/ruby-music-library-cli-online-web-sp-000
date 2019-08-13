@@ -9,7 +9,7 @@ class MusicImporter
     Dir["#{@path}/*.mp3"].map {|filename| filename.sub("#{@path}/", "")}
   end
   
-  def self.import
+  def import
     self.files.each {|file| Song.create_from_filename(file)}
   end
   
