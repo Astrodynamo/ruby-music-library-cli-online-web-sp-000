@@ -35,7 +35,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     answer = gets.strip
-    
+    songs = Artist.all.map {|
   end
   
   def list_songs_by_genre
