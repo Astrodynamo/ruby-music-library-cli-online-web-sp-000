@@ -49,7 +49,6 @@ class MusicLibraryController
   end
   
   def play_song
-    list_songs
     puts "Which song number would you like to play?"
     answer = gets.strip
     if answer > 0 && answer < Song.all.size
